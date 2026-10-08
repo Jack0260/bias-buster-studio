@@ -123,7 +123,7 @@ function Index() {
               <h2 className="font-display text-xl">Funnel</h2>
               <div className="mt-4 space-y-3">
                 {cur.stages.map((s) => {
-                  const max = cur.stages[0].A + cur.stages[0].B;
+                  const max = (cur.stages[0]?.A ?? 0) + (cur.stages[0]?.B ?? 0) || 1;
                   return (
                     <div key={s.name}>
                       <div className="flex justify-between text-sm"><span>{s.name}</span><span className="font-mono text-muted-foreground">{s.A} / {s.B}</span></div>

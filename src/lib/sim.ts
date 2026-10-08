@@ -35,7 +35,7 @@ export function generate(p: Params): Candidate[] {
   });
 }
 
-function selectTop(scored: { c: Candidate; s: number }[], rate: number, equal: boolean) {
+function selectTop(scored: { c: Candidate; s: number }[], rate: number, equal: boolean): Candidate[] {
   if (!equal) {
     const k = Math.round(scored.length * rate);
     return [...scored].sort((a, b) => b.s - a.s).slice(0, k).map((x) => x.c);
