@@ -1,14 +1,18 @@
-# Welcome to your Lovable project
+# FairHire Simulator
+
+Create a simulator that models bias in recruitment pipelines. Input: candidate profiles with attributes. Output: bias metrics, visualizations, and suggested interventions. Use synthetic datasets and fairness algorithms to demonstrate mitigation strategies.
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://bias-buster-studio.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/2631d9f9-7a40-4421-9024-a867d300b55e).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +24,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
