@@ -67,7 +67,7 @@ export function run(cands: Candidate[], p: Params, m: Mitigations) {
     const st = { name, A, B, rateA: prev.A ? A / prev.A : 0, rateB: prev.B ? B / prev.B : 0 };
     stages.push(st); return st;
   };
-  const st1 = push("Résumé screen", s1, stages[0]);
+  const st1 = push("Résumé screen", s1, stages[0]!);
 
   const noise = m.structured ? 0.3 : 0.8;
   const interview = s1.map((c) => ({
